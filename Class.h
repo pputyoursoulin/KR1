@@ -26,8 +26,9 @@ public:
 
 	Cvector &operator = (const Cvector &a) {
 		for (int i = 0; i < LENGTH; i++) {
-			vector[i] = a.vector[i];
+			this->vector[i] = a.vector[i];
 		}
+		return *this;
 	}
 
 	Cvector operator + (const Cvector &a) {
@@ -55,7 +56,7 @@ public:
 	}
 
 	void input() {
-		cout << "\t¬ведите координаты вектора: ";
+		cout << "\tEnter the coordinates: ";
 		for (int i = 0; i < LENGTH; i++) {
 			cin >> vector[i];
 		}

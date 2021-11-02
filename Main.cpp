@@ -1,10 +1,9 @@
 #include "Class.h"
 
 int main() {
-	setlocale(LC_ALL, "ru");
 
 	if (LENGTH < 1) {
-		cout << "\tОшибка!!! Размерность векторного пространства некорректна..." << endl;
+		cout << "\tError!!! change dim" << endl;
 		return 0;
 	}
 
@@ -12,7 +11,7 @@ int main() {
 	Autotest2();
 	Autotest3();
 
-	cout << "\tРазмерность векторного пространства: " << LENGTH << endl << endl;
+	cout << "\tdim: " << LENGTH << endl << endl;
 	Cvector v1, v2;
 	int operacia;
 	
@@ -26,7 +25,7 @@ int main() {
 	v2.print();
 	cout << endl;
 
-	cout << "\n\tВыберите операцию над векторами:\n\n\t1 - Сумма(+);\n\t2 - Разность(-);\n\t3 - Скалярное произведение(+).\n\n\tОперация: ";
+	cout << "\n\tOperation:\n\n\t1 - Sum(+);\n\t2 - Subtraction(-);\n\t3 - Scalar product(+).\n\n\tEnter operation: ";
 	cin >> operacia;
 	cout << endl;
 
@@ -40,10 +39,10 @@ int main() {
 		(v1 - v2).print();
 		break;
 	case 3:
-		cout << "\t(a,b) = " << v1 * v2;
+		cout << "\t(a,b) = " << v1 * v2 << endl;
 		break;
 	default:
-		cout << "\tОшибка!!!Некорректно введена операция..." << endl;
+		cout << "\tError!!! the operation was entered incorrectly..." << endl;
 		break;
 	}
 	return 0;
