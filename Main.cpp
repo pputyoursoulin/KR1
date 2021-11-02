@@ -25,7 +25,7 @@ int main() {
 	v2.print();
 	cout << endl;
 
-	cout << "\n\tOperation:\n\n\t1 - Sum(+);\n\t2 - Subtraction(-);\n\t3 - Scalar product(+).\n\n\tEnter operation: ";
+	cout << "\n\tOperation:\n\n\t1 - Sum(+);\n\t2 - Subtraction(-);\n\t3 - Scalar product(*).\n\n\tEnter operation: ";
 	cin >> operacia;
 	cout << endl;
 
